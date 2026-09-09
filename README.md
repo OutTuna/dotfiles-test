@@ -1,3 +1,7 @@
+# 🗂️ Dotfiles
+
+Конфиги для разных платформ, разложенные по отдельным веткам.
+
 ## 🌿 Структура веток
 
 | Ветка | Платформа | Состав |
@@ -10,8 +14,9 @@
 
 ## 🐧 Linux
 
+```bash
 # 1. Клонирование ветки linux
-git clone -b linux --single-branch [https://github.com/OutTuna/dotfiles-test.git](https://github.com/OutTuna/dotfiles-test.git) /tmp/dotfiles
+git clone -b linux --single-branch https://github.com/OutTuna/dotfiles-test.git /tmp/dotfiles
 
 # 2. Создание целевой папки при необходимости
 mkdir -p ~/.config
@@ -22,12 +27,15 @@ cp -R /tmp/dotfiles/.config/kitty ~/.config/
 
 # 4. Очистка временных файлов
 rm -rf /tmp/dotfiles
+```
+
 ---
 
-## 🍏 MacOS
+## 🍏 macOS
 
+```bash
 # 1. Клонирование ветки macos
-git clone -b macos --single-branch [https://github.com/OutTuna/dotfiles-test.git](https://github.com/OutTuna/dotfiles-test.git) /tmp/dotfiles
+git clone -b macos --single-branch https://github.com/OutTuna/dotfiles-test.git /tmp/dotfiles
 
 # 2. Создание целевой папки при необходимости
 mkdir -p ~/.config
@@ -38,12 +46,15 @@ cp -R /tmp/dotfiles/.config/kitty ~/.config/
 
 # 4. Очистка временных файлов
 rm -rf /tmp/dotfiles
+```
+
 ---
 
-## 🪟 Windows (alacritty or powershell) 
+## 🪟 Windows (Alacritty / PowerShell)
 
+```powershell
 # 1. Клонирование ветки windows
-git clone -b windows --single-branch [https://github.com/OutTuna/dotfiles-test.git](https://github.com/OutTuna/dotfiles-test.git) $env:TEMP\dotfiles
+git clone -b windows --single-branch https://github.com/OutTuna/dotfiles-test.git $env:TEMP\dotfiles
 
 # 2. Создание папки конфига alacritty
 New-Item -ItemType Directory -Force -Path "$env:APPDATA\alacritty"
@@ -53,3 +64,4 @@ Copy-Item "$env:TEMP\dotfiles\alacritty.toml" "$env:APPDATA\alacritty\alacritty.
 
 # 4. Очистка временных файлов
 Remove-Item -Recurse -Force "$env:TEMP\dotfiles"
+```
