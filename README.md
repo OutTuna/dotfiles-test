@@ -12,6 +12,9 @@
 
 ---
 
+# Перед запуском, не забудьте поставить git, fish, kitty/alacritty(windows), а также OMF
+---
+
 ## 🐧 Linux
 
 ```bash
