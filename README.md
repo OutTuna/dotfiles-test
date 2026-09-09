@@ -22,6 +22,7 @@ cp -R /tmp/dotfiles/.config/kitty ~/.config/
 
 # 4. Очистка временных файлов
 rm -rf /tmp/dotfiles
+---
 
 ## 🍏 MacOS
 
@@ -37,6 +38,7 @@ cp -R /tmp/dotfiles/.config/kitty ~/.config/
 
 # 4. Очистка временных файлов
 rm -rf /tmp/dotfiles
+---
 
 ## 🪟 Windows (alacritty or powershell) 
 
@@ -51,13 +53,3 @@ Copy-Item "$env:TEMP\dotfiles\alacritty.toml" "$env:APPDATA\alacritty\alacritty.
 
 # 4. Очистка временных файлов
 Remove-Item -Recurse -Force "$env:TEMP\dotfiles"
-
-```fish
-# macOS
-git clone -b macos --single-branch git@github.com:OutTuna/dotfiles-test.git ~/.dotfiles
-
-# Linux
-git clone -b linux --single-branch git@github.com:OutTuna/dotfiles-test.git ~/.dotfiles
-
-# Windows (PowerShell / Git Bash)
-git clone -b windows --single-branch git@github.com:OutTuna/dotfiles-test.git ~/dotfiles
