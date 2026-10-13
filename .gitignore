@@ -1,2 +1,8 @@
 .DS_Store
 .config/fish/fish_variables
+
+# Local backups and editor state
+*.bak
+*.swp
+*.swo
+*.log

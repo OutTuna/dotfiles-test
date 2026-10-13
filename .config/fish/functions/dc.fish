@@ -3,7 +3,7 @@ function dc --description "Показать кастомные команды"
     set_color --bold blue
     printf 'Кастомные команды\n'
     set_color normal
-    set -l names c cls up cfg acfg sns dc
+    set -l names c cls up cfg acfg sns zsns dc
     for file in ~/.config/fish/functions/*.fish
         set -l name (string replace -r '\.fish$' '' -- (path basename $file))
         if not string match -q '_*' $name; and not string match -q 'fish_*' $name

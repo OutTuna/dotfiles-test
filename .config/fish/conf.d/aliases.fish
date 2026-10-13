@@ -18,6 +18,10 @@ function acfg --description "Алиасы fish в nvim"
     command nvim ~/.config/fish/conf.d/aliases.fish $argv
 end
 
-function sns --description "Подключиться к серверу"
+function sns --description "Сервер по локальной сети"
     command ssh sns $argv
+end
+
+function zsns --description "Сервер через ZeroTier"
+    command ssh zsns $argv
 end
